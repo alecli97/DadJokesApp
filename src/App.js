@@ -153,12 +153,22 @@ class App extends React.Component {
       div className = "machine-output-area" > {
         {
           1: < p > {
-            this.state.isFetchingDadJoke ? 'Loading joke...' : 'dadJoke'
+            this.state.isFetchingDadJoke ? 'Loading joke...' : this.state.dadJoke
           } < /p>,
           2: < p > {
             this.state.isFetchingChuckJoke ? 'Loading joke...' : this.state.chuckJoke
           } < /p>
         } [this.state.type]
+      } {
+        /* {
+                    {
+                      1: <p>{this.state.isFetchingDadJoke ? 'Loading joke...' : this.state.dadJoke}</p>,
+                      2: <p>{this.state.isFetchingChuckJoke ? 'Loading joke...' : this.state.chuckJoke}</p>
+                    }[this.state.type]
+                  } */
+      } {
+        /* <p>{this.state.isFetchingDadJoke ? 'Loading joke...' : this.state.dadJoke}</p>
+                  <p>{this.state.isFetchingChuckJoke ? 'Loading joke...' : this.state.chuckJoke}</p> */
       } <
       /div> <
       /div>
