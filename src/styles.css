@@ -1,0 +1,145 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+div {
+  display: block;
+}
+
+.machine-container {
+  width: 100%;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /* background-image: url(../media/pipes-bg.png); */
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+
+.machine-foreground {
+  z-index: 0;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+.pipes {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: auto;
+}
+
+.ball {
+  margin-left: -4%;
+  margin-top: -4%;
+  width: 8%;
+  position: absolute;
+  height: auto;
+  z-index: 5;
+}
+
+.title {
+  top: 15%;
+  left: 26%;
+  width: 62%;
+}
+
+.bubble {
+  position: absolute;
+  height: auto;
+  z-index: 20;
+}
+
+.hat {
+  top: 3%;
+  left: 20%;
+  width: 25%;
+}
+
+.tie {
+  top: 41%;
+  left: 16.5%;
+  width: 6%;
+}
+
+.wheel {
+  top: 39.25%;
+  left: 57%;
+  width: 11%;
+}
+
+.hammer {
+  top: 64.25%;
+  left: 18%;
+  width: 22%;
+}
+
+.mustache {
+  top: 77.5%;
+  left: 34%;
+  width: 30%;
+}
+
+.lights {
+  top: 33%;
+  left: 83%;
+  width: 15%;
+  display: none;
+}
+
+.whale {
+  top: 59%;
+  left: 64%;
+  width: 20%;
+}
+
+.dad-button {
+  margin-left: 1%;
+  margin-top: 0%;
+  width: 8%;
+  position: absolute;
+  height: auto;
+  z-index: 5;
+}
+
+.machine-output-area {
+  position: relative;
+  top: -5px;
+  border-radius: 10px;
+  background-color: #CEE0EB;
+  color: #11446E;
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 10px;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  height: 5em;
+}
+
+.interactive-container {
+  margin-bottom: 40px;
+}
+
+.interactive-container,
+.cnn-outbrain,
+#comments,
+#disqus_thread {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 980px;
+}
+
+.chuck-button {
+  margin-left: 1%;
+  margin-top: 10%;
+  width: 8%;
+  position: absolute;
+  height: auto;
+  z-index: 5;
+}
