@@ -13,7 +13,7 @@ div {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-image: url(https://cdn.cnn.com/cnn/interactive/2019/06/us/dad-joke-generator-trnd/media/pipes-bg.png);
+  background-image: url(pipes-bg-back-1.png);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: contain;
@@ -32,6 +32,7 @@ div {
   z-index: 10;
   width: 100%;
   height: auto;
+  filter: brightness(0.4);
 }
 
 .ball {
@@ -99,27 +100,34 @@ div {
 }
 
 .dad-button {
-  margin-left: 1%;
-  margin-top: 0%;
-  width: 8%;
+  margin-left: -2%;
+  margin-top: 9%;
+  width: 15%;
   position: absolute;
-  height: auto;
+  height: 4em;
   z-index: 5;
+  background-color: #071b11;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  color: #fe8f11;
+  font-weight: bold;
+  font-size: 1.25em;
 }
 
 .machine-output-area {
   position: relative;
   top: -5px;
   border-radius: 10px;
-  background-color: #CEE0EB;
-  color: #11446E;
+  background-color: #b3b1b1;
+  color: #071b2c;
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1.25em;
   padding: 10px;
   text-align: center;
-  max-width: 700px;
+  max-width: 1000px;
   margin: 0 auto;
-  height: 5em;
+  height: 6em;
 }
 
 .interactive-container {
@@ -132,34 +140,55 @@ div {
 #disqus_thread {
   margin: 0 auto;
   width: 95%;
-  max-width: 980px;
+  max-width: 1500px;
 }
 
 .chuck-button {
-  margin-left: 2%;
-  margin-top: 10%;
-  width: 8%;
+  margin-left: -2%;
+  margin-top: 18%;
+  width: 15%;
   position: absolute;
-  height: auto;
+  height: 4em;
   z-index: 5;
+  background-color: #071b11;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  color: #fe8f11;
+  font-weight: bold;
+  font-size: 1.25em;
 }
 
 .programming-button {
-  margin-left: 2%;
-  margin-top: 20%;
-  width: 8%;
+  margin-left: -2%;
+  margin-top: 27%;
+  width: 15%;
   position: absolute;
-  height: auto;
+  height: 4em;
   z-index: 5;
+  background-color: #071b11;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  color: #fe8f11;
+  font-weight: bold;
+  font-size: 1.25em;
 }
 
 .manatee-button {
-  margin-left: 2%;
-  margin-top: 25%;
-  width: 8%;
+  margin-left: -2%;
+  margin-top: 36%;
+  width: 15%;
   position: absolute;
-  height: auto;
+  height: 4em;
   z-index: 5;
+  background-color: #071b11;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  color: #fe8f11;
+  font-weight: bold;
+  font-size: 1.25em;
 }
 
 .ball-1 {
@@ -290,4 +319,275 @@ div {
   100% {
     transform: translateY(-5px);
   }
+}
+
+.chuck-button:active {
+  background-color: #d3d3d3;
+  transition: background-color 0.5s;
+  ;
+}
+
+.dad-button:active {
+  background-color: #d3d3d3;
+  transition: background-color 0.5s;
+  ;
+}
+
+.programming-button:active {
+  background-color: #d3d3d3;
+  transition: background-color 0.5s;
+  ;
+}
+
+.manatee-button:active {
+  background-color: #d3d3d3;
+  transition: background-color 0.5s;
+  ;
+}
+
+.emoji {
+  margin-left: 75%;
+  margin-top: 1%;
+  width: 8%;
+  position: absolute;
+
+}
+
+.thumbs-up-image {
+  margin-left: 70%;
+  margin-top: 10.5%;
+  width: 9%;
+  position: absolute;
+  height: 4em;
+  z-index: 5;
+  background: url(thumbs-up.png);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.25em;
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.thumbsup:active {
+  animation: 0.8s ease 0s infinite alternate wave-animation;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0.0deg)
+  }
+
+  10% {
+    transform: rotate(14.0deg)
+  }
+
+  20% {
+    transform: rotate(-8.0deg)
+  }
+
+  30% {
+    transform: rotate(14.0deg)
+  }
+
+  40% {
+    transform: rotate(-4.0deg)
+  }
+
+  50% {
+    transform: rotate(10.0deg)
+  }
+
+  60% {
+    transform: rotate(0.0deg)
+  }
+
+  100% {
+    transform: rotate(0.0deg)
+  }
+}
+
+.heart-image {
+  margin-left: 70%;
+  margin-top: 21%;
+  width: 9%;
+  position: absolute;
+  height: 4em;
+  z-index: 5;
+  background: url(heart.png);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.25em;
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.heart:active {
+  animation: 0.3s linear 0s infinite forwards heartWiggle;
+}
+
+@keyframes heartWiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-15deg);
+  }
+
+  75% {
+    transform: rotate(15deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.thumbs-down-image {
+  margin-left: 70%;
+  margin-top: 31.5%;
+  width: 9%;
+  position: absolute;
+  height: 4em;
+  z-index: 5;
+  background: url(thumbs-down.png);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.25em;
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.thumbsdown:active {
+  animation: 0.8s ease 0s infinite alternate thumbs-down-animation;
+}
+
+@keyframes thumbs-down-animation {
+  0% {
+    transform: rotate(0.0deg)
+  }
+
+  10% {
+    transform: rotate(14.0deg)
+  }
+
+  20% {
+    transform: rotate(-8.0deg)
+  }
+
+  30% {
+    transform: rotate(14.0deg)
+  }
+
+  40% {
+    transform: rotate(-4.0deg)
+  }
+
+  50% {
+    transform: rotate(10.0deg)
+  }
+
+  60% {
+    transform: rotate(0.0deg)
+  }
+
+  100% {
+    transform: rotate(0.0deg)
+  }
+}
+
+.angry-image {
+  margin-left: 70%;
+  margin-top: 42%;
+  width: 9%;
+  position: absolute;
+  height: 4em;
+  z-index: 5;
+  background: url(angry.png);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.25em;
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.angry:active {
+  animation: 0.8s ease 0s infinite alternate angry-animation;
+}
+
+@keyframes angry-animation {
+  0% {
+    transform: rotate(0.0deg)
+  }
+
+  10% {
+    transform: rotate(14.0deg)
+  }
+
+  20% {
+    transform: rotate(-8.0deg)
+  }
+
+  30% {
+    transform: rotate(14.0deg)
+  }
+
+  40% {
+    transform: rotate(-4.0deg)
+  }
+
+  50% {
+    transform: rotate(10.0deg)
+  }
+
+  60% {
+    transform: rotate(0.0deg)
+  }
+
+  100% {
+    transform: rotate(0.0deg)
+  }
+}
+
+.programming-title {
+  top: 17%;
+  left: 26%;
+  width: 62%;
+  position: absolute;
+  height: auto;
+  z-index: 20;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  font-family: emoji
+}
+
+.programming-generator-title {
+  top: 22%;
+  left: 26%;
+  width: 62%;
+  position: absolute;
+  height: auto;
+  z-index: 20;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  color: #fe8f11;
+  font-weight: bold;
+  font-size: 2.45em;
 }
