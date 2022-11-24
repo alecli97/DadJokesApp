@@ -13,7 +13,7 @@ div {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  /* background-image: url(../media/pipes-bg.png); */
+  background-image: url(https://cdn.cnn.com/cnn/interactive/2019/06/us/dad-joke-generator-trnd/media/pipes-bg.png);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: contain;
@@ -142,4 +142,152 @@ div {
   position: absolute;
   height: auto;
   z-index: 5;
+}
+
+.programming-button {
+  margin-left: 2%;
+  margin-top: 20%;
+  width: 8%;
+  position: absolute;
+  height: auto;
+  z-index: 5;
+}
+
+.manatee-button {
+  margin-left: 2%;
+  margin-top: 25%;
+  width: 8%;
+  position: absolute;
+  height: auto;
+  z-index: 5;
+}
+
+.ball-1 {
+  top: 25%;
+  left: 62%;
+}
+
+.ball-2 {
+  top: 25%;
+  left: 38.5%;
+}
+
+.ball-3 {
+  top: 21%;
+  left: 38.5%;
+}
+
+.lights {
+  top: 33%;
+  left: 83%;
+  width: 15%;
+  display: none;
+}
+
+.lights.active {
+  display: block;
+}
+
+.wheel.active {
+  animation: 1s linear 0s infinite forwards turnWheel;
+}
+
+.hammer.active {
+  animation: 0.6s linear 0s infinite forwards swingHammer;
+}
+
+.mustache.active {
+  animation: 0.2s linear 0s infinite forwards mustacheWiggle;
+}
+
+.whale.active {
+  animation: 0.8s ease 0s infinite alternate swimmingWhale;
+}
+
+.tie.active {
+  animation: 0.8s ease 0s infinite alternate swingTie;
+}
+
+.hat.active {
+  animation: 0.8s ease 0s infinite alternate swingHat;
+}
+
+@keyframes turnWheel {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-30deg);
+  }
+
+  75% {
+    transform: rotate(30deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes swingHammer {
+  0% {
+    transform: rotate(0deg) translateY(0);
+  }
+
+  90% {
+    transform: rotate(5deg) translateY(-10%);
+  }
+
+  100% {
+    transform: rotate(0deg) translateY(0);
+  }
+}
+
+@keyframes mustacheWiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-5deg);
+  }
+
+  75% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes swimmingWhale {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes swingTie {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes swingHat {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-5px);
+  }
 }
