@@ -752,3 +752,58 @@ div {
 .realChuck.active {
   animation: 0.2s linear 0s infinite forwards mustacheWiggle;
 }
+
+.emojiReact {
+  bottom: 7%;
+  right: 71.5%;
+  overflow: hidden;
+  margin-left: 70%;
+  margin-top: 42%;
+  width: 9%;
+  position: absolute;
+  height: 4em;
+  z-index: 5;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.25em;
+  border: none;
+}
+
+.emojiReactThumbsUp {
+  background: url(thumbs-up.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.emojiReactThumbsDown {
+  background: url(thumbs-down.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.emojiReactHeart {
+  background: url(heart.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.emojiReactAngry {
+  background: url(angry.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.basket {
+  transition: opacity 0.9s;
+  opacity: 1;
+}
+
+.basket.hide {
+  opacity: 0;
+  pointer-events: none;
+}

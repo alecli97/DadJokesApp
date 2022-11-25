@@ -36,7 +36,12 @@ class App extends React.Component {
       thumbsUp: false,
       heart:false,
       thumbsdown:false,
-      angry:false
+      angry:false,
+      emojiType: 0,
+      angryOpen: false,
+      thumbsDownOpen:false,
+      thumbsUpOpen:false,
+      heartOpen:false
     };
     
     this.onTellDadJoke = this.onTellDadJoke.bind(this);
@@ -167,7 +172,13 @@ class App extends React.Component {
 
   onTellThumbsUpEmoji() {
     this.setState({
-      thumbsup: true
+      thumbsup: true,
+      emojiType: 1,
+      thumbsUpOpen: !this.state.thumbsUpOpen,
+      heartOpen:false,
+      thumbsDownOpen:false,
+      angryOpen:false
+
     });
       setTimeout(function() {
         this.setState({
@@ -178,7 +189,12 @@ class App extends React.Component {
 
   onTellHeartEmoji() {
     this.setState({
-      heart: true
+      heart: true,
+      emojiType: 2,
+      heartOpen: !this.state.heartOpen,
+      thumbsUpOpen: false,
+      thumbsDownOpen: false,
+      angryOpen: false
     });
     setTimeout(function() {
       this.setState({
@@ -189,7 +205,12 @@ class App extends React.Component {
 
   onTellThumbsDownEmoji() {
     this.setState({
-      thumbsdown: true
+      thumbsdown: true,
+      emojiType:3,
+      thumbsDownOpen: !this.state.thumbsDownOpen,
+      thumbsUpOpen: false,
+      heartOpen: false,
+      angryOpen: false
     });
     setTimeout(function() {
       this.setState({
@@ -200,7 +221,12 @@ class App extends React.Component {
 
   onTellAngryEmoji() {
     this.setState({
-      angry: true
+      angry: true,
+      emojiType:4,
+      angryOpen: !this.state.angryOpen,
+      thumbsUpOpen: false,
+      heartOpen: false,
+      thumbsDownOpen: false
     });
     setTimeout(function() {
       this.setState({
@@ -210,7 +236,10 @@ class App extends React.Component {
   };
  
   render() {
-
+  const angryClasses = this.state.angryOpen ? 'basket' : 'basket hide';
+  const thumbsUpClasses = this.state.thumbsUpOpen ? 'basket' : 'basket hide';
+  const thumbsDownclasses = this.state.thumbsDownOpen ? 'basket' : 'basket hide';
+  const heartClasses = this.state.heartOpen ? 'basket' : 'basket hide';
     return (
       <div className="interactive-container">
 
@@ -218,10 +247,10 @@ class App extends React.Component {
           <button className={"chuck-button " + (this.state.active ? 'active' : '')} onClick={this.onTellChuckJoke} disabled={this.state.isFetchingChuckJoke}>Chuck Joke</button>
           <button className={"programming-button "+ (this.state.active ? 'active' : '')} onClick={this.onTellProgrammingJoke} disabled={this.state.isFetchingProgrammingJoke}>Programming Joke</button>
           <button className={"manatee-button "+ (this.state.active ? 'active' : '')} onClick={this.onTellManateeJoke} disabled={this.state.isFetchingManateeJoke}>Manatee Joke</button>
-          <button className = {"thumbs-up-image thumbsup" + (this.state.thumbsup ? 'active' : '')} onClick = {this.onTellThumbsUpEmoji}></button>
-          <button className = {"heart-image heart" + (this.state.heart ? 'active' : '')} onClick = {this.onTellHeartEmoji}></button>
-          <button className = {"thumbs-down-image thumbsdown" + (this.state.thumbsdown ? 'active' : '')} onClick = {this.onTellThumbsDownEmoji}></button>
-          <button className = {"angry-image angry" + (this.state.angry ? 'active' : '')} onClick = {this.onTellAngryEmoji}></button>
+          <button className = {"thumbs-up-image thumbsup " + (this.state.thumbsup ? 'active' : '')} onClick = {this.onTellThumbsUpEmoji}></button>
+          <button className = {"heart-image heart " + (this.state.heart ? 'active' : '')} onClick = {this.onTellHeartEmoji}></button>
+          <button className = {"thumbs-down-image thumbsdown " + (this.state.thumbsdown ? 'active' : '')} onClick = {this.onTellThumbsDownEmoji}></button>
+          <button className = {"angry-image angry " + (this.state.angry ? 'active' : '')} onClick = {this.onTellAngryEmoji}></button>
 
         <div className="machine-container">
           <div className="machine-foreground">
@@ -340,6 +369,17 @@ class App extends React.Component {
             }[this.state.type]
           }
         </div>
+        < div >
+            {
+              {
+                1: < div className = {"emojiReact emojiReactThumbsUp basket " + thumbsUpClasses} > < /div>,
+                2: < div className = {"emojiReact emojiReactHeart basket " + heartClasses}> < /div>,
+                3: < div className = {"emojiReact emojiReactThumbsDown basket " + thumbsDownclasses}> < /div>,
+                4: < div className = {"emojiReact emojiReactAngry basket " + angryClasses}> < /div>
+
+              } [this.state.emojiType]
+            }
+      </div>
       </div>
       
     );
