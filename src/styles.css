@@ -371,6 +371,7 @@ div {
   background-position: center center;
 }
 
+.thumbsup:hover,
 .thumbsup:active {
   animation: 0.8s ease 0s infinite alternate wave-animation;
 }
@@ -427,6 +428,7 @@ div {
   background-position: center center;
 }
 
+.heart:hover,
 .heart:active {
   animation: 0.3s linear 0s infinite forwards heartWiggle;
 }
@@ -467,42 +469,9 @@ div {
   background-position: center center;
 }
 
+.thumbsdown:hover,
 .thumbsdown:active {
-  animation: 0.8s ease 0s infinite alternate thumbs-down-animation;
-}
-
-@keyframes thumbs-down-animation {
-  0% {
-    transform: rotate(0.0deg)
-  }
-
-  10% {
-    transform: rotate(14.0deg)
-  }
-
-  20% {
-    transform: rotate(-8.0deg)
-  }
-
-  30% {
-    transform: rotate(14.0deg)
-  }
-
-  40% {
-    transform: rotate(-4.0deg)
-  }
-
-  50% {
-    transform: rotate(10.0deg)
-  }
-
-  60% {
-    transform: rotate(0.0deg)
-  }
-
-  100% {
-    transform: rotate(0.0deg)
-  }
+  animation: 0.8s ease 0s infinite alternate wave-animation;
 }
 
 .angry-image {
@@ -523,42 +492,9 @@ div {
   background-position: center center;
 }
 
+.angry:hover,
 .angry:active {
-  animation: 0.8s ease 0s infinite alternate angry-animation;
-}
-
-@keyframes angry-animation {
-  0% {
-    transform: rotate(0.0deg)
-  }
-
-  10% {
-    transform: rotate(14.0deg)
-  }
-
-  20% {
-    transform: rotate(-8.0deg)
-  }
-
-  30% {
-    transform: rotate(14.0deg)
-  }
-
-  40% {
-    transform: rotate(-4.0deg)
-  }
-
-  50% {
-    transform: rotate(10.0deg)
-  }
-
-  60% {
-    transform: rotate(0.0deg)
-  }
-
-  100% {
-    transform: rotate(0.0deg)
-  }
+  animation: 0.8s ease 0s infinite alternate wave-animation;
 }
 
 .programming-title {
@@ -590,4 +526,229 @@ div {
   color: #fe8f11;
   font-weight: bold;
   font-size: 2.45em;
+}
+
+.laptop {
+  width: 300px;
+  height: 155px;
+  top: -3.5%;
+  overflow: hidden;
+}
+
+.laptop.active {
+  animation: 0.8s ease 0s infinite alternate swingHat;
+}
+
+.man {
+  width: 210px;
+  height: 170px;
+  top: -1.5%;
+  overflow: hidden;
+}
+
+.man.active {
+  animation: 0.8s ease 0s infinite alternate swingHat;
+}
+
+.manatee {
+  width: 210px;
+  height: 170px;
+  top: -5.5%;
+  overflow: hidden;
+}
+
+.manatee.active {
+  animation: 0.8s ease 0s infinite alternate swingHat;
+}
+
+.python {
+  width: 117px;
+  height: 133px;
+  top: 40.5%;
+  left: 10%;
+  overflow: hidden;
+}
+
+.python.active {
+  animation: 0.8s ease 0s infinite alternate swingHat;
+}
+
+.java {
+  width: 122px;
+  height: 114px;
+  top: 60%;
+  left: 18.5%;
+  overflow: hidden;
+}
+
+.java.active {
+  animation: 0.8s ease 0s infinite alternate swingHat;
+}
+
+.c {
+  width: 122px;
+  height: 114px;
+  top: 73.5%;
+  left: 39.5%;
+  overflow: hidden;
+}
+
+.c.active {
+  animation: 0.8s ease 0s infinite alternate mustacheWiggle;
+}
+
+.manatea {
+  width: 151px;
+  height: 130px;
+  top: 73.5%;
+  left: 37.5%;
+  overflow: hidden;
+}
+
+.manatea.active {
+  animation: 0.2s linear 0s infinite forwards mustacheWiggle;
+}
+
+.html {
+  width: 184px;
+  height: 146px;
+  top: 53.5%;
+  left: 56.5%;
+  overflow: hidden;
+}
+
+.html.active {
+  animation: 0.2s linear 0s infinite forwards mustacheWiggle;
+}
+
+.griffin {
+  width: 107px;
+  height: 146px;
+  top: 40.5%;
+  left: 10.5%;
+  overflow: hidden;
+}
+
+.griffin.active {
+  animation: 0.2s linear 0s infinite forwards mustacheWiggle;
+}
+
+.familyGuy {
+  width: 168px;
+  height: 119px;
+  top: 54.5%;
+  left: 58%;
+  overflow: hidden;
+}
+
+.familyGuy.active {
+  animation: 0.2s linear 0s infinite forwards mustacheWiggle;
+}
+
+.chuckJoke {
+  width: 151px;
+  height: 130px;
+  top: 72.5%;
+  left: 37.5%;
+  overflow: hidden;
+}
+
+.chuckJoke.active {
+  animation: 0.2s linear 0s infinite forwards mustacheWiggle;
+}
+
+.realManatee {
+  width: 145px;
+  height: 62px;
+  top: 63.5%;
+  left: 19.5%;
+  overflow: hidden;
+}
+
+.realManatee.active {
+  animation: 0.2s linear 0s infinite forwards mustacheWiggle;
+}
+
+.yourself {
+  width: 223px;
+  height: 230px;
+  top: 36.5%;
+  left: 1%;
+  overflow: hidden;
+}
+
+.yourself.active {
+  animation: 0.2s linear 0s infinite forwards mustacheWiggle;
+}
+
+.name {
+  width: 129px;
+  height: 111px;
+  top: 56.5%;
+  left: 58%;
+  overflow: hidden;
+}
+
+.name.active {
+  animation: 0.2s linear 0s infinite forwards mustacheWiggle;
+}
+
+.cartoon {
+  width: 101px;
+  height: 98px;
+  top: 61.5%;
+  left: 19%;
+  overflow: hidden;
+}
+
+.cartoon.active {
+  animation: 0.2s linear 0s infinite forwards mustacheWiggle;
+}
+
+.dadJoke {
+  width: 173px;
+  height: 126px;
+  top: 41.5%;
+  left: 23%;
+  overflow: hidden;
+}
+
+.dadJoke.active {
+  animation: 0.2s linear 0s infinite forwards mustacheWiggle;
+}
+
+.css {
+  width: 154px;
+  height: 129px;
+  top: 40.5%;
+  left: 25%;
+  overflow: hidden;
+}
+
+.css.active {
+  animation: 0.2s linear 0s infinite forwards mustacheWiggle;
+}
+
+.cartoonManatee {
+  width: 107px;
+  height: 120px;
+  top: 40.5%;
+  left: 29%;
+  overflow: hidden;
+}
+
+.cartoonManatee.active {
+  animation: 0.2s linear 0s infinite forwards mustacheWiggle;
+}
+
+.realChuck {
+  width: 98px;
+  height: 111px;
+  top: 42.5%;
+  left: 29.5%;
+  overflow: hidden;
+}
+
+.realChuck.active {
+  animation: 0.2s linear 0s infinite forwards mustacheWiggle;
 }
